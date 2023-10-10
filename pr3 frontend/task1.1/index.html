@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="paragraphs">
+        <p>Сонце спроможне зігріти землю та подарувати нам світло і тепло.</p>
+        <p>У лісі шепочуть вітри, а дерева танцюють під їхній мелодії.</p>
+        <p>Музика може вражати душу, викликати емоції та переносити нас в інші світи.</p>
+        <p>Книги — це вікна в інші реальності, де кожна сторінка розкриває нову пригоду.</p>
+        <p>Усмішка — це найпрекрасніший спосіб поділитися теплом та радістю з оточуючими.</p>
+    </div>
+
+    <script>
+
+        const paragraphsDiv = document.getElementById("paragraphs");
+
+
+        const paragraphs = paragraphsDiv.querySelectorAll("p");
+
+        const characterCounts = [];
+
+
+        paragraphs.forEach(paragraph => {
+            const text = paragraph.innerText;
+            const characterCount = text.length;
+            characterCounts.push(characterCount);
+        });
+
+        console.log(characterCounts);
+    </script>
+</body>
+
+</html>
